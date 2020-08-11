@@ -17,13 +17,6 @@ body{
     display: table;
     clear: both;
 }
-@media(max-width:600px){
-    .column{
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
 .card{
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     max-width:300px;
@@ -57,4 +50,54 @@ a{
 }
 a:hover, button:hover{
     opacity: 0.6;
+}
+/*Responsivness*/
+ @media(max-width:1279px){
+    .column{
+        width: 33.3333333333%;
+    }
+    .last{
+        margin-top: 20px;
+    }
+} 
+@media(max-width:934px){
+    .column{
+        width:45%;
+    }
+    .last{
+        margin-top: 20px;
+    }
+}
+@media(max-width:718px){
+    .column{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:340px){
+    .card{
+        width: 250px;
+    }
+}
+@media(max-width:271px){
+    .card{
+        width: 200px;
+    }
+    image{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media(max-width:213px){
+    .card{
+        width: 150px;
+    }
+    image{
+        width: 70px;
+        height: 70px;
+    }
+    button{
+        width: 70px;
+    }
 }
